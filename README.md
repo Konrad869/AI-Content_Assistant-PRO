@@ -33,3 +33,13 @@ Testing:
 
 ![Jasmine](https://img.shields.io/badge/jasmine-%238A4182.svg?style=for-the-badge&logo=jasmine&logoColor=white)
 <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/karma.svg" alt="karma" width="40" height="40"/> </a> 
+
+
+
+
+<img src="screenshots/Zrzut ekranu 2025-08-24 o 15.09.21.png" alt="Podgląd aplikacji" width="600">
+<img src="screenshots/Zrzut ekranu 2025-08-24 o 15.09.38.png" alt="Podgląd aplikacji" width="600">
+<img src="screenshots/Zrzut ekranu 2025-08-24 o 15.11.06.png" alt="Podgląd aplikacji" width="600">
+<img src="screenshots/Zrzut ekranu 2025-08-24 o 15.11.19.png" alt="Podgląd aplikacji" width="600">
+<img src="screenshots/Zrzut ekranu 2025-08-24 o 15.11.33.png" alt="Podgląd aplikacji" width="600">
+<img src="screenshots/Zrzut ekranu 2025-08-24 o 15.11.44.png" alt="Podgląd aplikacji" width="600">
