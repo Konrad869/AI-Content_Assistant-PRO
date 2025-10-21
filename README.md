@@ -54,7 +54,7 @@ Testing:
 
 1. In a new terminal, navigate to the frontend directory:
    ```bash
-   cd frontend
+   cd src
    ```
 
 2. Install dependencies:
