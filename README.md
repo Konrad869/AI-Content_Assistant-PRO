@@ -98,7 +98,7 @@ ng test
    ```bash
    ng build --configuration production
    ```
-2. Deploy the contents of the `dist/frontend` directory to your web server.
+2. Deploy the contents of the `src` directory to your web server.
 
 ## License
 
