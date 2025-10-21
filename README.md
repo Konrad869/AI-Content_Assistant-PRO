@@ -37,7 +37,7 @@ Testing:
 
 
 
-<img src="screenshots/Zrzut ekranu 2025-08-24 o 15.09.21.png" alt="Podgląd aplikacji" width="600">
+<img src="screenshots/Zrzut ekranu 2025-10-21 o 17.22.11" alt="Podgląd aplikacji" width="600">
 <img src="screenshots/Zrzut ekranu 2025-08-24 o 15.09.38.png" alt="Podgląd aplikacji" width="600">
 <img src="screenshots/Zrzut ekranu 2025-08-24 o 15.11.06.png" alt="Podgląd aplikacji" width="600">
 <img src="screenshots/Zrzut ekranu 2025-08-24 o 15.11.19.png" alt="Podgląd aplikacji" width="600">
