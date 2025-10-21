@@ -1,1 +1,85 @@
+
+// Include theming for Angular Material with `mat.theme()`.
+// This Sass mixin will define CSS variables that are used for styling Angular Material
+// components according to the Material 3 design spec.
+// Learn more about theming and how to use it for your application's
+// custom components at https://material.angular.dev/guide/theming
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (
+      primary: mat.$cyan-palette,
+      tertiary: mat.$blue-palette,
+      theme-type: dark,
+    ),
+    typography: Roboto,
+    density: 0,
+  ));
+}
+
+body {
+  // Dark color theme
+  color-scheme: dark;
+
+  // Custom dark theme colors
+  background-color: #0a0a14 !important;
+  color: #ffffff !important;
+  font: var(--mat-sys-body-medium);
+
+  // Reset the user agent margin.
+  margin: 0;
+}
+
+/* Custom color overrides for better contrast */
+* {
+  --mat-sys-surface: #1a1a2e !important;
+  --mat-sys-on-surface: #ffffff !important;
+  --mat-sys-primary: #00f7ff !important;
+  --mat-sys-on-primary: #0a0a14 !important;
+  --mat-sys-background: #0a0a14 !important;
+  --mat-sys-on-background: #ffffff !important;
+}
+
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+  height: 100%; 
+  background-color: #0a0a14 !important;
+}
+
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #ffffff !important;
+}
+
+/* Override Material components colors */
+.mat-mdc-card {
+  background-color: #1a1a2e !important;
+  color: #ffffff !important;
+}
+
+.mat-mdc-form-field {
+  color: #ffffff !important;
+}
+
+.mat-mdc-form-field-label,
+.mat-mdc-select-value,
+.mat-mdc-input-element {
+  color: #00f7ff !important;
+}
+
+.mat-mdc-button,
+.mat-mdc-raised-button {
+  background-color: #00f7ff !important;
+  color: #0a0a14 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #7bd0ff !important;
+}
+
+p {
+  color: #a0e4ff !important;
+}

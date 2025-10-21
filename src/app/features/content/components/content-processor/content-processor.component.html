@@ -1,0 +1,53 @@
+<div class="content-processor">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Process Your Content</mat-card-title>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <form [formGroup]="processingForm" (ngSubmit)="processText()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Enter your text</mat-label>
+          <textarea matInput formControlName="content" rows="8" required></textarea>
+        </mat-form-field>
+
+        <div class="form-row">
+          <mat-form-field appearance="outline">
+            <mat-label>Processing Type</mat-label>
+            <mat-select formControlName="type" required>
+              <mat-option *ngFor="let type of processingTypes" [value]="type.value">
+                {{ type.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Style</mat-label>
+            <mat-select formControlName="style" required>
+              <mat-option *ngFor="let style of styles" [value]="style.value">
+                {{ style.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+
+        <div class="actions">
+          <button 
+            mat-raised-button 
+            color="primary" 
+            type="submit" 
+            [disabled]="processingForm.invalid || isProcessing"
+          >
+            <span *ngIf="!isProcessing">Process Content</span>
+            <mat-spinner *ngIf="isProcessing" diameter="20"></mat-spinner>
+          </button>
+        </div>
+      </form>
+
+      <div *ngIf="result" class="result">
+        <h3>Processed Content:</h3>
+        <div class="result-content" [innerHTML]="result.processedText"></div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

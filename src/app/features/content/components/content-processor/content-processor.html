@@ -1,0 +1,84 @@
+<div class="content-processor">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>AI Content Assistant PRO</mat-card-title>
+      <mat-card-subtitle>Transform your text with AI</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <form [formGroup]="processingForm" (ngSubmit)="processText()">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Enter your text</mat-label>
+          <textarea
+            matInput
+            formControlName="text"
+            cdkTextareaAutosize
+            cdkAutosizeMinRows="6"
+            placeholder="Paste your text here..."
+          ></textarea>
+          <mat-hint>Minimum 10 characters required</mat-hint>
+          <mat-error *ngIf="processingForm.get('text')?.hasError('required')">
+            Text is required
+          </mat-error>
+          <mat-error *ngIf="processingForm.get('text')?.hasError('minlength')">
+            Text must be at least 10 characters long
+          </mat-error>
+        </mat-form-field>
+
+        <div class="form-row">
+          <mat-form-field appearance="outline" class="half-width">
+            <mat-label>Style</mat-label>
+            <mat-select formControlName="style">
+              <mat-option *ngFor="let style of styles" [value]="style.value">
+                {{ style.viewValue }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <mat-radio-group formControlName="type" class="processing-type">
+            <mat-radio-button *ngFor="let type of processingTypes" [value]="type.value">
+              {{ type.viewValue }}
+            </mat-radio-button>
+          </mat-radio-group>
+        </div>
+
+        <div class="actions">
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit"
+            [disabled]="processingForm.invalid || isProcessing"
+          >
+            <span *ngIf="!isProcessing">Process Text</span>
+            <mat-spinner *ngIf="isProcessing" diameter="20"></mat-spinner>
+          </button>
+        </div>
+      </form>
+
+      <div *ngIf="result" class="result-container">
+        <mat-divider></mat-divider>
+        <div class="result-header">
+          <h3>
+            {{ getTypeDisplayName(result.type) }} - {{ getStyleDisplayName(result.style) }}
+            <button
+              mat-icon-button
+              matTooltip="Copy to clipboard"
+              (click)="copyToClipboard(result.processedText)"
+            >
+              <mat-icon>content_copy</mat-icon>
+            </button>
+          </h3>
+          <span class="timestamp">{{ result.timestamp | date: 'medium' }}</span>
+        </div>
+
+        <div class="result-content">
+          <h4>Original Text:</h4>
+          <p class="original-text">{{ result.originalText }}</p>
+
+          <h4>Processed Text:</h4>
+          <p class="processed-text">{{ result.processedText }}</p>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
