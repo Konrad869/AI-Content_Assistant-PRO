@@ -4,18 +4,29 @@ It demonstrates how a frontend developer can build a realistic AI interface, wit
 
 Users can:
 
-Paste any text into the input field
+Paste or type text, such as an article, product description, LinkedIn post, or a paragraph with errors.
 
-Choose a writing style
+Select a text processing style from the list (formal/technical/creative).
+Each style influences the tone and structure of the generated text.
 
-Click "Process" to generate the result
+Click the "Process" button.
+The application will display an animated loader (spinner) and after a moment, show the result, simulating the operation of a real AI model.
 
-View simulated AI output with a loading spinner
+View the result in an aesthetically pleasing card (MatCard).
+The resulting text appears in a separate component with clean formatting and a style heading.
 
-Copy the generated result
+Copy the result with a single click.
+The "Copy" button copies the processed text to the clipboard.
 
-Browse history of recent queries (stored in localStorage)
+View the history of your recent queries.
+The application saves up to 5 recent results in the browser's local storage.
+You can quickly view or reuse previous texts.
 
+Use without logging in or requiring API keys.
+Everything runs locally (mock API), so no accounts or payments are required.
+
+Use on a variety of devices
+The app is responsive (Material Design), so it works on both computers and phones.
 
 💻 Tech Stack:
 
