@@ -42,4 +42,13 @@ Testing:
 <img src="screenshots/Zrzut ekranu 2025-10-21 o 17.24.54.png" alt="Podgląd aplikacji" width="600">
 <img src="screenshots/Zrzut ekranu 2025-10-21 o 17.26.18.png" alt="Podgląd aplikacji" width="600">
 
+## Features
 
+
+
+Paste any text into the input field
+Choose a writing style
+Click "Process" to generate the result
+View simulated AI output with a loading spinner
+Copy the generated result
+Browse history of recent queries (stored in localStorage)
