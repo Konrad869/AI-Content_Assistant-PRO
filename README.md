@@ -42,13 +42,11 @@ Testing:
 <img src="screenshots/Zrzut ekranu 2025-10-21 o 17.24.54.png" alt="Podgląd aplikacji" width="600">
 <img src="screenshots/Zrzut ekranu 2025-10-21 o 17.26.18.png" alt="Podgląd aplikacji" width="600">
 
-## Features
+## Prerequisites
 
+- Node.js (v18 or later)
+- npm (v9 or later) or yarn
+- Angular CLI (v20 or later)
 
+## Getting Started
 
-Paste any text into the input field
-Choose a writing style
-Click "Process" to generate the result
-View simulated AI output with a loading spinner
-Copy the generated result
-Browse history of recent queries (stored in localStorage)
