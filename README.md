@@ -69,4 +69,20 @@ Testing:
    The application will be available at `http://localhost:4200`
 
 ## Project Structure
+src/
+ ├── app/
+ │   ├── components/
+ │   │    ├── text-input/
+ │   │    ├── style-selector/
+ │   │    ├── result-view/
+ │   │    └── history-list/
+ │   ├── services/
+ │   │    ├── huggingface.service.ts
+ │   │    └── replicate.service.ts
+ │   ├── app.component.ts
+ │   ├── app.component.html
+ │   ├── app.module.ts
+ │   └── app.component.css
+ ├── assets/
+ └── styles.css
 
