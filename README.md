@@ -50,3 +50,23 @@ Testing:
 
 ## Getting Started
 
+### Frontend Setup
+
+1. In a new terminal, navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
+   The application will be available at `http://localhost:4200`
+
+## Project Structure
+
