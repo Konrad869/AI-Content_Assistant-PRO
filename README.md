@@ -69,3 +69,38 @@ Testing:
    The application will be available at `http://localhost:4200`
 
 
+## Available Scripts
+
+
+### Frontend
+- `ng serve` - Start the development server
+- `ng build` - Build the application for production
+- `ng test` - Run unit tests
+- `ng e2e` - Run end-to-end tests
+
+## Testing
+
+
+
+### Frontend Tests
+To run the frontend tests:
+```bash
+cd src
+ng test
+```
+
+## Deployment
+
+
+
+### Frontend
+1. Build the application for production:
+   ```bash
+   ng build --configuration production
+   ```
+2. Deploy the contents of the `dist/frontend` directory to your web server.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
